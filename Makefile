@@ -1,9 +1,6 @@
-CFLAGS=-O3 -Werror
-LDLIBS=-lpthread
-CC=gcc
+CXXFLAGS=-Ofast -std=c++11 -Werror
 
-sleepsort: sleepsort.c
-	gcc $(CFLAGS) sleepsort.c $(LDLIBS) -o sleepsort
+sleepsort: sleepsort.cpp
 
 clean:
 	rm -f sleepsort
