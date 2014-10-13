@@ -1,4 +1,4 @@
-CXXFLAGS=-Ofast -std=c++11 -Werror
+CXXFLAGS=-Ofast -std=c++11 -Werror -lpthread
 
 sleepsort: sleepsort.cpp
 

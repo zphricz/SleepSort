@@ -61,6 +61,11 @@ int check_sorted(unsigned int * arr, int size) {
 }
 
 int main(int argc, char *argv[]) {
+    
+    if (argc != 2) {
+        cout << "USAGE: " << argv[0] << " <array size>" << endl;
+        return 1;
+    }
     int size = atoi(argv[1]);
     unsigned int *arr = new unsigned int[size];
 
